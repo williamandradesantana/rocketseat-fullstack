@@ -12,6 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@900&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -20,10 +23,10 @@
     <main class="main-container">
 
         <section class="container_about_city_busan">
-            <h3>Sua próxima viagem</h3>
+            <h3 class="headline">Sua próxima viagem</h3>
             <h1>Conheça Busan</h1>
             <img class="image_busan_at_night" src="assets/city_at_night.jpg" alt="Imagem de uma cidade de Busan">
-            <p class="description_about_busan_italic">
+            <p class="subtitle">
                 Busan, a estrela em ascensão da Coreia do Sul, oferece de tudo, desde churrascarias de primeira linha
                 até
                 tradicionais barracas de comida de rua. Aqui, exploramos a segunda cidade da Coreia do Sul e descobrimos
@@ -31,9 +34,11 @@
             </p>
         </section>
 
+        <hr>
+
         <section class="container_three_locations_in_busan_that_can_be_visited">
-            <h3>Para os amantes de história</h3>
-            <h1>Descubra 3 destinos imperdíveis em Busan</h1>
+            <h3 class="headline">Para os amantes de história</h3>
+            <h2>Descubra 3 destinos imperdíveis em Busan</h2>
             <p>
                 As atrações de Busan vão desde templos budistas centenários que pontilham as montanhas e o litoral da
                 cidade até praias imaculadas com águas cristalinas. Esta cidade litorânea tem muitas coisas para fazer o
@@ -47,51 +52,59 @@
             <div id="container_temple_haedong_younggungsa">
                 <img class="image_temple_haedong_yonggungsa" src="assets/temple_haedong_yonggungsa.jpg"
                     alt="Imagem do templo de Haedong Yonggungsa">
-                <p>1. Templo Haedong Yonggungsa</p>
-                <p class="subtitle">
+                <h3>1. Templo Haedong Yonggungsa</h3>
+                <p>
                     O Templo Haedong Yonggungsa é um templo budista localizado no extremo nordeste de Busan. Construído
                     em
                     1376, é um dos poucos templos na Coreia construídos à beira-mar – você pode desfrutar de vistas do
                     Mar
                     do Leste de um lado e de belas montanhas do outro.
                 </p>
-                <p>Bom para:</p>
-                <ul>
-                    <li class="list_item list_item_blue">História</li>
-                </ul>
+                <div class="container-list">
+                    <p><strong>Bom para:</strong></p>
+                    <ul>
+                        <li class="list_item"><span class="list_item_blue">História</span></li>
+                    </ul>
+                </div>
             </div>
 
             <div id="container_temple_beomeo-sa">
                 <img class="image_temple_beomeo-sa" src="assets/temple_beomeo_sa.jpg"
                     alt="Imagem do templo de Beomeo-sa">
-                <p>2. Templo Beomeo-sa</p>
-                <p class="subtitle">
+                <h3>2. Templo Beomeo-sa</h3>
+                <p>
                     O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele está localizado no alto da
                     borda leste da montanha Geumjeongsa e fica distante da agitação da cidade. O Daeungjeon Hall do
                     templo é um exemplo bem preservado da arquitetura da Dinastia Joseon.
                 </p>
-                <p>Bom para:</p>
-                <ul>
-                    <li class="list_item list_item_blue">História</li>
-                </ul>
+                <div class="container-list">
+                    <p><strong>Bom para:</strong></p>
+                    <ul>
+                        <li class="list_item"><span class="list_item_blue">História</span></li>
+                    </ul>
+                </div>
             </div>
 
             <div id="container_yongdusan_park">
                 <img class="image_youngdusan_park" src="assets/yongdusan_park.jpg" alt="Imagem do Parque de Yongdusan">
-                <p>3. Parque Yongdusan</p>
-                <p class="subtitle">
+                <h3>3. Parque Yongdusan</h3>
+                <p>
                     O Parque Yongdusan, localizado no centro de Busan, abriga alguns dos monumentos mais importantes da
                     cidade. Você pode ver vistas espetaculares do topo da Torre Busan, de 120 metros de altura. O parque
                     tem 2 museus – confira os instrumentos musicais tradicionais no Museum of World Folk Instruments e
                     mais de 80 veleiros coreanos no Exhibition Hall of World Model Boats.
                 </p>
-                <p>Bom para:</p>
-                <ul>
-                    <li class="list_item list_item_blue">História</li>
-                    <li class="list_item list_item_pink">Famílias</li>
-                    <li class="list_item list_item_orange">Orçamento</li>
-                </ul>
+                <div class="container-list">
+                    <p><strong>Bom para:</strong></p>
+                    <ul>
+                        <li><span class="list_item_purple">Casais</span></li>
+                        <li><span class="list_item_pink">Famílias</span></li>
+                        <li><span class="list_item_orange">Orçamento</span></li>
+                    </ul>
+                </div>
             </div>
+
+            <hr>
 
             <p class="description_about_busan_no_italic">
                 As melhores coisas para fazer em Busan mostram a reputação da cidade como um importante porto marítimo
@@ -103,7 +116,7 @@
     </main>
 
     <footer>
-        <p>Feito com <img src="assets/heart.png" alt="Imagem de um coração"> pela Rocketseat</p>
+        <p>Feito com <img src="assets/heart.svg" alt="Imagem de um coração"> pela Rocketseat</p>
     </footer>
 </body>
 

@@ -1,4 +1,95 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: "Open Sans", serif;
 }
 
+hr {
+    color: #D9D9D9;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 20px 0 4px 0;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+img {
+    border-radius: 28px;
+    margin-top: 64px;
+}
+
+p, .subtitle {
+    font-size: 16px;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+ul > li {
+    margin: 0 30px;
+}
+
+.container-list > p {
+    margin-top: 38px;
+}
+
+.headline {
+    text-transform: uppercase;
+    color: #E1624F;
+}
+
+.main-container {
+    margin: 88px 80px;
+    width: 1120px;
+}
+
+#container_temple_beomeo-sa > h3, #container_temple_haedong_younggungsa > h3, #container_yongdusan_park > h3 {
+    margin-top: 20px;
+}
+
+.description_about_busan_no_italic, .description_about_busan_italic {
+    text-align: center;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+.list_item_blue {
+    color: #0C51A7;
+}
+
+.list_item_purple {
+    color: #591B98;
+}
+
+.list_item_orange {
+    color: #E95E10;
+}
+
+.list_item_pink {
+    color: #E5245E;
+}
+
+footer {
+    text-align: center;
+    margin: 65px 0 48px 0;
+}
+
+footer > p {
+    font-family: "Alice", serif;
+    font-size: 16px;
+}
