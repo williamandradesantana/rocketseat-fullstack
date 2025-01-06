@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Alice", serif;
+    line-height: 150%;
+    color: #573a37;
+}
+
 body {
     background-image: url(assets/bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #page {
@@ -20,4 +30,36 @@ body {
 
 img {
     border-radius: 16px;
+}
+
+main {
+    padding: 24px;
+}
+
+section + section {
+    margin-top: 24px;
+}
+
+#about p + p {
+    margin-top: 12px;
+}
+
+h1 {
+    line-height: 140%;
+    font-size: 40px;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    color: #291B1A;
+    margin-bottom: 4px;
+    line-height: 150%;
+}
+
+ul {
+    padding-left: 24px;
 }
