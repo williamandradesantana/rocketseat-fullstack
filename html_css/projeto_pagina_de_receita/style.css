@@ -1,0 +1,13 @@
+body {
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 16px;
+}
