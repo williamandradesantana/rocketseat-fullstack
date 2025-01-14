@@ -1,0 +1,57 @@
+#intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+    
+    background-image: url(../assets/images/Background_Intro.png);
+    background-repeat: no-repeat;
+
+    div .avatar {
+        width: 150px;
+        margin-bottom: 56px;
+    }
+    
+    .personal-description {
+        max-width: 650px;
+
+        h1 {
+            margin-block: 24px;
+        }
+    }
+
+    div .subtitle #my-name {
+        color: var(--red);
+    }
+
+    #tecnologies {
+        margin-block: 80px 94px;
+        list-style: none;
+        gap: 16px;
+        align-items: center;
+
+        li {
+            color: var(--gray-500);
+        }
+
+        li .tech-icon {
+            width: 24px;
+            height: 24px;
+        } 
+
+        li div {
+           width: 114px;
+           height: 40px;
+           gap: 8px;
+           background-color: var(--gray-300);
+           border-radius: 16px;
+           align-items: center;
+           justify-content: center;
+        }
+
+        li div:has(#javascript) {
+            width: 138px;
+        }
+    }
+}
