@@ -6,14 +6,16 @@
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 .subtitle {
     font: var(--subtitle);
-    color: var(--gray-500);
 }
 
 .title-lg {
     font: var(--title-lg);
-    color: var(--gray-600);
 }
 
 .text-md {
@@ -22,5 +24,4 @@
 
 .text-sm {
     font: var(--text-sm);
-    color: var(--gray-400);
 }
