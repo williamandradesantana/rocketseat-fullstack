@@ -1,0 +1,61 @@
+#projects {
+    background: var(--gray-200);
+    overflow: hidden;
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        span {
+            /* configurar o espaçamento entre o título e o subtítulo */
+            margin-block: 72px 8px;
+            color: var(--red);
+        }
+
+        h2 {
+            color: var(--gray-600);
+        }
+    }
+
+    #projects-list {
+        
+        margin-block: 56px 144px;
+        margin-inline: 163px;
+
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 24px;
+        
+
+        figure img {
+            width: 100%;
+            object-fit: cover;
+            /* baixar imagem sem o border */
+            border-radius: 8px;
+        }
+
+        figure {
+            width: 330px;
+            border-width: 12px 12px 20px 12px;
+            border-style: solid;
+            border-color: var(--gray-300);
+            border-radius: 12px;
+        }
+
+        figure figcaption {
+            background-color: var(--gray-300);
+        }
+
+        figure figcaption .title-sm {
+            padding-block: 20px 8px;
+            color: var(--gray-600);
+        }
+
+        figure figcaption .text-sm {
+            color: var(--gray-400);
+        }
+    }
+}
