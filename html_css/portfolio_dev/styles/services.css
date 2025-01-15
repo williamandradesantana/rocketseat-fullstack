@@ -1,0 +1,43 @@
+#services {
+    background-color: var(--gray-100);
+    overflow: hidden;
+
+    header {
+        margin-top: 88px;
+        flex-direction: column;
+        text-align: center;
+
+        span {
+            font: var(--subtitle);
+            color: var(--red);
+        }
+
+        h2 {
+            margin-top: 8px;
+            font: var(--title-md);
+            color: var(--gray-500);
+        }
+    }
+
+    #services-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        margin-inline: 239px;
+        margin-block: 10% 120px;
+        gap: 37.5px;
+        
+        place-items: center;
+
+        figure figcaption h3 {
+            margin-block: 20px 8px;
+            font: var(--title-sm);
+            color: var(--gray-600);
+        }
+
+        figure figcaption p {
+            font: var(--text-sm);
+            color: var(--gray-500);
+        }
+    }
+}
