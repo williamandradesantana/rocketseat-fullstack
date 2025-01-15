@@ -31,3 +31,11 @@
     --text-md: 16px/1.4 var(--font-family-maven-pro);
     --text-sm: 14px/1.4 var(--font-family-maven-pro);
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

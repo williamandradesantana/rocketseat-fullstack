@@ -1,0 +1,53 @@
+#contact {
+    background-image: url(../assets/images/Background_Intro.png);
+    background-repeat: no-repeat;
+
+    header {
+        flex-direction: column;
+        text-align: center;
+
+        span {
+            margin-top: 128px;
+            font: var(--subtitle);
+            color: var(--purple);
+        }
+
+        h2 {
+            margin-block: 8px;
+            font: var(--title-md);
+            color: var(--gray-600);
+        }
+
+        p {
+            font: var(--text-md);
+            color: var(--gray-500);
+        }
+    }
+
+    #contact-list {
+        margin-block: 48px 200px;
+        justify-content: center;
+
+        ul {
+            flex-direction: column;
+            gap: 50px;
+        }
+        ul li {
+            width: 400px;
+            background-color: var(--gray-300);
+            border: 1rem solid var(--gray-300);
+            border-radius: 8px;
+        }
+
+        ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul li span {
+            font: var(--text-md);
+            color: var(--gray-500);
+        }
+    }
+}
