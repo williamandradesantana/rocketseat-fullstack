@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivite</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <aside class="aside-container">
+            <header>
+                <img class="logo" src="assets/Logo.svg" alt="Ícone de estouro de festa">
+                <h1>Festivite</h1>
+                <p>Crie um convite digital para o seu evento</p>
+            </header>
+        </aside>
+
+        <section class="invite">
+            <h2>Crie seu convite</h2>
+
+            <form enctype="multipart/form-data">
+                <fieldset>
+                    <legend>
+                        <img src="assets/icons/calendar.svg" alt="Ícone de calendário">
+                        <p>Sobre o evento</p>
+                    </legend>
+
+                    <div class="input-wrapper event-name">
+                        <label for="event-name">Título</label>
+                        <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
+                    </div>
+
+                    <div class="input-wrapper dates">
+
+                        <div>
+                            <label for="start">Início</label>
+                            <input type="datetime-local" lang="pt-br" name="start" id="start"
+                                placeholder="DD/MM/AAAA, --:--">
+                        </div>
+
+                        <div>
+                            <label for="end">Fim</label>
+                            <input type="datetime-local" lang="pt-BR" name="end" id="end"
+                                placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper type">
+                        <label>Tipo</label>
+
+                        <div class="radio-wrapper">
+                            <div class="radio-inner">
+                                <div class="radio-image on-site"></div>
+                                <input type="radio" name="type" id="onsite">
+                                <label for="onsite">Presencial</label>
+                            </div>
+
+                            <div class="radio-inner">
+                                <div class="radio-image remote"></div>
+                                <input type="radio" name="type" id="remote">
+                                <label for="remote">Online</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

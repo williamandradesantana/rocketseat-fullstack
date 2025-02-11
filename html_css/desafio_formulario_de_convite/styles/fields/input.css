@@ -1,0 +1,56 @@
+input, textarea, select {
+    appearance: none;
+
+    background-color: var(--input-base);
+    border: none;
+    border-radius: 0.5rem;
+
+    font: var(--body-md);
+}
+
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font: var(--body-md);
+    color: var(--text-body);
+
+    & + .radio-wrapper {
+        margin-top: 0.25rem;
+    }
+}
+
+input {
+    width: 35rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+}
+
+input::placeholder, input[type="datetime-local"] {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-wrapper + .input-wrapper {
+    margin-top: 2rem;
+}
+
+input[type="datetime-local"] {
+    width: 17rem;
+
+    &::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+    
+}

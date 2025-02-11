@@ -1,0 +1,26 @@
+.radio-inner {
+
+    &:hover, &:focus-within, :checked {
+        border-color: var(--stroke-highlight);
+        background: indianred;
+    }
+    .radio-image {
+        width: 1rem;
+        height: 1rem;
+    }
+    .radio-image.on-site {
+        background-image: url(../../assets/icons/onsite-icon.svg);
+    }
+
+    .radio-image.remote {
+        background-image: url(../../assets/icons/video.svg);
+    }
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+}

@@ -1,0 +1,97 @@
+#app {
+    display: grid;
+    grid-template-columns: 48.75% 51.25%;
+
+    height: 100vh;
+    overflow: hidden;
+
+    .aside-container {
+        display: flex;
+
+        background-image: url(../assets/Background.svg);
+        background-size: calc(58%);
+        background-repeat: no-repeat;
+        background-position: 120%;
+        
+        position: relative;
+            
+        header {
+            display: flex;
+            flex-direction: column;
+            
+            position: absolute;
+            left: 52%;
+
+            gap: 1rem;
+                
+            .logo {
+                width: 2.866rem;
+                height: 3rem;
+                margin-top: 3.25rem;
+            }
+
+            h1 {
+                font: var(--logo);
+                color: var(--pink);
+            }
+
+            p {
+                font: var(--body-sd);
+                color: var(--text-heading);
+            }
+
+        }
+        .background {
+            width: 25rem;
+        }
+    }
+
+    .invite {
+        display: flex;
+        flex-direction: column;
+
+        align-items: start;
+        overflow: auto;
+        margin: 5rem 8.125rem 0 8.125rem;
+
+        width: 51.25rem;
+
+        form fieldset .dates {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+        }
+
+        form fieldset .input-wrapper {
+            .radio-wrapper {
+                display: flex;
+                gap: 1.25rem;
+                justify-content: space-between;
+                align-items: center;
+                
+                width: 17rem;
+                height: 3rem;
+
+                border: 1px solid var(--input-stroke);
+                border-radius: 0.5rem;
+
+                .radio-inner:nth-child(1) {
+                    margin-left: 0.5rem;
+                }
+
+                .radio-inner {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    width: 8.125rem;
+                }
+            }
+        }
+    }
+}
