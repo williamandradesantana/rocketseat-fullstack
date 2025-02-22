@@ -55,7 +55,7 @@
     /* border: 1px solid violet; */
 }
 
-@media (width >=80em) {
+@media (width >= 80em) {
     .container {
         --max-width: 80rem;
     }
