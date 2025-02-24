@@ -3,9 +3,22 @@ footer {
     padding-block: 24px;
     gap: 24px;
 
-    font: 14px/150% var(--font-family);
+    font: 14px/150% var(--font-family); 
+
+    div {
+        display: flex;
+        margin-left: auto;
+        gap: 1rem;
+    }
 }
 
-footer span:nth-child(1) {
-    margin-right: auto;
+@media (width <= 360px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer span:nth-child(1) {
+        display: flex;
+        justify-content: center;
+    }
 }

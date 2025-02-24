@@ -20,3 +20,17 @@ nav ul li:last-child img {
     border-radius: 50%;
 }
 
+.desktop-only {
+    display: initial;
+}
+
+@media (width <= 360px) {
+    .desktop-only {
+        display: none;
+    }
+
+    #primary-menu {
+        width: 6rem;
+        gap: 0.5rem;
+    }
+}
