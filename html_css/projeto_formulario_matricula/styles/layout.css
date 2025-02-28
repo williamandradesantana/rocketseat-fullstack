@@ -51,3 +51,37 @@ aside {
         }
     }
 }
+
+@media (width <= 360px) {
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+   
+    main {
+        overflow: unset;
+        & .main-container {
+            max-width: 19.5rem;
+        }
+    }
+
+    div.flex {
+        flex-direction: column;
+    }
+
+    div.radio-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .actions-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn-secondary {
+            margin-left: 0;
+        }
+    }
+}

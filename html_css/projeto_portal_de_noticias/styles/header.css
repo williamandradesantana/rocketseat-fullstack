@@ -21,5 +21,19 @@
     padding-block: 14px;
     border: 1px solid var(--stroke-color);
     border-inline: none;
-    justify-content: space-betwee;
+    justify-content: space-between;
+}
+
+@media (width <= 360px) {
+    .desktop-only {
+        display: none;
+    }
+
+    #primary, #secodary {
+        display: flex;
+    }
+
+    #secondary {
+        gap: 2rem;
+    }
 }

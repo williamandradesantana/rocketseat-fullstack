@@ -115,3 +115,22 @@ aside {
         margin-top: 8px;
     }
 }
+
+@media (width <= 360px) {
+    #featured div figure h2, .text-2xl {
+        font-size: 0.875rem;
+    }
+
+    #featured, #featured div, #weekly div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ai {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
