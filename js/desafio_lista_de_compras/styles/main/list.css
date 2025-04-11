@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.75rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 0.75rem;
+  background-color: var(--background-primary);
+
+  & div img:hover {
+    background-image: url(../../assets/icons/checkbox-hover.svg);
+  }
+
+  & div {
+    display: flex;
+  }
+
+  & div:nth-child(1) {
+    align-items: center;
+    gap: 0.531rem;
+  }
+}

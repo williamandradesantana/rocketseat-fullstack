@@ -1,0 +1,12 @@
+.desktop-only {
+  display: initial;
+}
+
+.d-flex,
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}

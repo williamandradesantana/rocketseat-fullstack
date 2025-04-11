@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <header class="desktop-only">
+        <img src="assets/icons/logo.svg" alt="Quicklist logo">
+        <h1>quicklist</h1>
+    </header>
+
+    <main>
+        <header>
+            <div>
+                <img src="assets/icons/arrow-left.svg" alt="Arrow icon">
+                <p> Voltar </p>
+            </div>
+            <h1>Compras da semana</h1>
+        </header>
+
+        <form method="get">
+            <input class="btn btn-primary" type="text" name="item" id="item" placeholder="Adicione um novo item">
+            <button class="btn btn-secondary" type="submit">Adicionar novo item</button>
+        </form>
+
+        <ul role="list">
+
+        </ul>
+    </main>
+</body>
+
+</html>
