@@ -1,0 +1,12 @@
+@media (width < 769px) {
+  div.logo {
+    gap: 0.688rem;
+
+    h3 {
+      text-transform: uppercase;
+      font: var(--d-medium);
+      font-size: 1.25rem;
+      color: var(--content-primary);
+    }
+  }
+}

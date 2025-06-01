@@ -1,0 +1,23 @@
+@media (width < 769px) {
+  footer#info {
+    gap: 1rem;
+
+    & section {
+      display: flex;
+      gap: 0.5rem;
+
+      & div:nth-child(1) {
+        width: 25%;
+      }
+    }
+    & section p:nth-child(1) {
+      color: var(--content-brand);
+      font: var(--paragraph-medium);
+    }
+
+    & section p:nth-child(2) {
+      color: var(--content-secondary);
+      font: var(--paragraph-small);
+    }
+  }
+}

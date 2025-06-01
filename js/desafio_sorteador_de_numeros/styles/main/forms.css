@@ -1,0 +1,57 @@
+@media (width < 769px) {
+  main form {
+    margin-block: 2.625rem 5rem;
+    gap: 2rem;
+
+    & div {
+      gap: 0.125rem;
+      & h3 {
+        font: var(--label-small);
+      }
+
+      & p {
+        font: var(--paragraph-medium);
+        color: var(--content-tertiary);
+      }
+    }
+
+    & section {
+      grid-template-areas:
+        "A B C"
+        "D D D";
+      gap: 0.5rem;
+    }
+
+    .no-repeat-number {
+      gap: 1rem;
+
+      & p {
+        font: var(--paragraph-medium);
+        color: var(--content-primary);
+      }
+    }
+
+    #result {
+      & h3 {
+        font: var(--label-medium);
+      }
+
+      & p {
+        color: var(--content-brand);
+        font: var(--overline);
+      }
+    }
+
+    button {
+      gap: 0.5rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+
+      background: var(--background-tertiary);
+      color: var(--content-primary);
+      font: var(--label-medium);
+      text-transform: uppercase;
+      border: none;
+    }
+  }
+}

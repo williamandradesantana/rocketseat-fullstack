@@ -1,0 +1,16 @@
+@media (width < 769px) {
+  main header {
+    margin-block: 2.875rem 2.625rem;
+    gap: 0.5rem;
+
+    & h2.overline {
+      font: var(--overline);
+      color: var(--content-tertiary);
+    }
+
+    & h2:nth-child(2) {
+      font: var(--d-small);
+      color: var(--content-primary);
+    }
+  }
+}

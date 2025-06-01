@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:ital,wght@0,700;1,700&family=Sora&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <div class="logo d-flex align-items-center justify-content-center">
+        <img src="assets/icons/logo.svg" alt="Numbers logo">
+        <h3>Numbers</h3>
+    </div>
+
+    <main>
+        <header class="d-flex flex-direction-column">
+            <h2 class="overline">Online - Gratuito</h2>
+            <h2>Sorteador <br> de números</h2>
+        </header>
+
+        <form class="d-flex flex-direction-column">
+            <div class="d-flex flex-direction-column">
+                <h3>Quero sortear:</h3>
+                <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É
+                    rápido
+                    e fácil!</p>
+            </div>
+
+            <section class="d-grid">
+                <div class="d-flex flex-direction-column text-align-center">
+                    <label for="quantity_of_numbers">Números</label>
+                    <input type="number" required name="quantity_of_numbers" id="quantity_of_numbers"
+                        class="number text-align-center">
+                </div>
+
+                <div class="d-flex flex-direction-column text-align-center">
+                    <label for="start">De</label>
+                    <input type="number" class="number text-align-center" required name="start" id="start">
+                </div>
+
+                <div class="d-flex flex-direction-column text-align-center">
+                    <label for="end">Até</label>
+                    <input type="number" class="number text-align-center" required name="end" id="end" required>
+                </div>
+            </section>
+
+            <section id="result" class="d-none"></section>
+            <button type="submit" class="d-flex align-items-center justify-content-center">Sortear <img
+                    src="assets/icons/arrow-right.svg" alt="Arrow right icon"></button>
+        </form>
+    </main>
+
+    <footer id="info" class="d-flex flex-direction-column">
+        <section id="how-does-number-draw-work">
+            <div>
+                <img class="support" src="assets/icons/support.svg" alt="">
+            </div>
+
+            <div id="descriptions">
+                <p>Como funciona o sorteador de números?</p>
+                <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo
+                    especificado pelo usuário.</p>
+            </div>
+        </section>
+
+        <section id="can-i-choose-the-range-of-numbers">
+            <div>
+                <img class="support" src="assets/icons/support.svg" alt="">
+            </div>
+
+            <div id="descriptions">
+                <p>Como funciona o sorteador de números?</p>
+                <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo
+                    especificado pelo usuário.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
