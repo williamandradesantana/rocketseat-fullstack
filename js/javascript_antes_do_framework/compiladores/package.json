@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "babel ./automatizando_as_mudancas/main.js --watch --out-dir ./dist"
+    "build": "babel ./automatizando_as_mudancas/main.js --out-dir ./dist",
+    "dev": "babel ./automatizando_as_mudancas/main.js --watch --out-dir ./dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.27.2",
