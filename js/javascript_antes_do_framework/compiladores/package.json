@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "babel ./configurando_e_utilizando_o_Babel/main.js --out-dir ./dist"
+  },
   "devDependencies": {
     "@babel/cli": "^7.27.2",
     "@babel/core": "^7.27.4",
