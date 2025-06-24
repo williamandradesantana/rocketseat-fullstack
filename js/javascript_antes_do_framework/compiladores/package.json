@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "babel ./configurando_e_utilizando_o_Babel/main.js --out-dir ./dist"
+    "build": "babel ./utilizando_o_arquivo_compilado/main.js --out-dir ./dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.27.2",
