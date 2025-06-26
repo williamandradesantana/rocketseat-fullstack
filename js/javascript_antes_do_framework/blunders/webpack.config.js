@@ -18,7 +18,22 @@ module.exports = {
 
   plugins: [new HtmlWebpackPlugin()],
   module: {
-    rules: [{ test: /\.css$/i, use: ["style-loader", "css-loader"] }],
-    exclude: "/node_modules",
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.js$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [["@babel/preset-env", { targets: "defaults" }]],
+          },
+        },
+      },
+    ],
   },
 };
