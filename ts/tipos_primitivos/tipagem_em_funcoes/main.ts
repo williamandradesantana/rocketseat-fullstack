@@ -6,3 +6,8 @@ function sum(x: number, y: number): number {
 }
 
 const result = sum(1, 2);
+
+const showMessage = (name: string): string => {
+  const message = "Olá " + name;
+  return message;
+};
