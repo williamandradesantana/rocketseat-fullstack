@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+
+  /* content */
+  --content-primary: #fff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+  /* background */
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: var(--content-brand);
+  --background-highlights: #bdb4fa;
+
+  /* border */
+  --border-primary: #3e3c41;
+  --border-primary: #86818c;
+  --border-brand: var(--border-brand);
+  --border-divisor: #353339;
+
+  /* accent */
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  /* Tipography */
+  --ff-inter-tight: "Inter Tight", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  --title: bold 1.5rem/2rem var(--ff-inter-tight);
+
+  --p-small: 500 0.75rem/1rem var(--ff-inter);
+  --p-medium: 500 0.875rem/1.5rem var(--ff-inter);
+  --label-small: bold 0.75rem/1rem var(--ff-inter);
+  --label-medium: bold 0.875rem/1.5rem var(--ff-inter);
+  --label-large: bold 1rem/1.5rem var(--ff-inter);
+  --link: 500 0.75rem/1rem var(--ff-inter);
+}
+
+body {
+  background-color: var(--background-tertiary);
+}
