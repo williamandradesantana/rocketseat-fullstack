@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebPackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  target: "web",
   mode: "development",
   entry: "./src/index.js",
   output: {
