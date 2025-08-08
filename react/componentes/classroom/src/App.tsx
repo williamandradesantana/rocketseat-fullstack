@@ -1,5 +1,9 @@
 import { Button } from "./components/Button";
 
 export function App() {
-  return <Button></Button>;
+  return (
+    <>
+      <Button></Button>
+    </>
+  );
 }
