@@ -1,12 +1,11 @@
-type Props = {
+type Props = React.ComponentProps<"button"> & {
   name: string;
   age: number;
-  onClick?: () => void;
 };
 
-export function Button({ name, age, onClick: onclick }: Props) {
+export function Button({ name, age, onClick }: Props) {
   return (
-    <button onClick={onclick}>
+    <button onClick={onClick}>
       {name} - {age}
     </button>
   );
