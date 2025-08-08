@@ -3,9 +3,9 @@ type Props = React.ComponentProps<"button"> & {
   age: number;
 };
 
-export function Button({ name, age, onClick }: Props) {
+export function Button({ name, age, ...rest }: Props) {
   return (
-    <button onClick={onClick}>
+    <button {...rest}>
       {name} - {age}
     </button>
   );
