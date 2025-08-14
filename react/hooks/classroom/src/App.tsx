@@ -8,7 +8,7 @@ import { Button } from "./components/button";
 import styles from "./app.module.css";
 
 function App() {
-  // const { show } = useMessage({ name: "William", age: 18 });
+  // const message = useMessage({ name: "William", age: 18 });
 
   const [count, setCount] = useState(0);
 
