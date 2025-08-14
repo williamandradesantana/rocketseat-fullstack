@@ -1,6 +1,6 @@
 import "./global.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Button } from "./components/button";
 // import { useMessage } from "./hooks/useMessage";
@@ -13,12 +13,16 @@ function App() {
   const [count, setCount] = useState(0);
 
   function handleAdd() {
-    setCount(count + 1);
+    setCount((prevState) => prevState + 1);
   }
 
   function handleRemove() {
-    setCount(count - 1);
+    setCount((prevState) => prevState - 1);
   }
+
+  useEffect(() => {
+    console.log("Oi!");
+  }, []);
 
   return (
     <div className={styles.container}>
