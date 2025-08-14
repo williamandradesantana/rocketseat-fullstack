@@ -17,12 +17,16 @@ function App() {
   }
 
   function handleRemove() {
-    setCount((prevState) => prevState - 1);
+    if (count > 0) {
+      setCount((prevState) => prevState - 1);
+    }
   }
 
   useEffect(() => {
-    console.log("Oi!");
-  }, []);
+    if (count > 0) {
+      console.log("O valor mudou ", count);
+    }
+  }, [count]);
 
   return (
     <div className={styles.container}>
