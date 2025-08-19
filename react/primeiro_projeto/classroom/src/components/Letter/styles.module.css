@@ -24,3 +24,15 @@
   font-weight: 500;
   border: 1px solid #6363db;
 }
+
+.letterCorrect {
+  background-color: #e1f5ec;
+  border-color: #03ad4f;
+  color: #03ad4f;
+}
+
+.letterWrong {
+  background-color: #ffcd62;
+  border-color: #691b0a;
+  color: #691b0a;
+}
