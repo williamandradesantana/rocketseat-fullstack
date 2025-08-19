@@ -9,10 +9,11 @@ import { Tip } from "./components/Tip";
 import { Letter } from "./components/Letter";
 import { Input } from "./components/Input";
 import { Button } from "./components/Button";
-import { LettersUsed } from "./components/LettersUsed";
+import { LettersUsed, type LettersUserProps } from "./components/LettersUsed";
 
 export default function App() {
   const [letter, setLetter] = useState<string>("");
+  const [lettersUsed, setLettersUsed] = useState<LettersUserProps[]>([]);
   const [attempts, setAttempts] = useState<number>(0);
   const [challenge, setChallenge] = useState<Challenge | null>(null);
 
@@ -59,7 +60,7 @@ export default function App() {
           <Button title="Confirmar" />
         </div>
 
-        <LettersUsed />
+        <LettersUsed data={lettersUsed} />
       </main>
     </div>
   );
