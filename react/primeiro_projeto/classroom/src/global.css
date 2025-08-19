@@ -13,9 +13,9 @@ body {
 }
 
 input,
-body {
+body,
+button {
   font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
 }
 
 button {
