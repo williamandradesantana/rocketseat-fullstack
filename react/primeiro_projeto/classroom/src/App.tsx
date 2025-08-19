@@ -1,21 +1,42 @@
+import styles from "./app.module.css";
+
+import { useEffect, useState } from "react";
+
+import { WORDS, Challenge } from "./utils/words";
+
 import { Header } from "./components/Header";
 import { Tip } from "./components/Tip";
 import { Letter } from "./components/Letter";
-
-import styles from "./app.module.css";
 import { Input } from "./components/Input";
 import { Button } from "./components/Button";
 import { LettersUsed } from "./components/LettersUsed";
 
 export default function App() {
+  const [letter, setLetter] = useState<string>("");
+  const [attempts, setAttempts] = useState<number>(0);
+  const [challenge, setChallenge] = useState<Challenge | null>(null);
+
   function handleRestartGame() {
     alert("Reiniciar o jogo");
   }
 
+  function startGame() {
+    const index = Math.floor(Math.random() * WORDS.length);
+    const randomWord = WORDS[index];
+
+    setChallenge(randomWord);
+    setAttempts(0);
+    setLetter("");
+  }
+
+  useEffect(() => {
+    startGame();
+  }, []);
+
   return (
     <div className={styles.container}>
       <main>
-        <Header current={5} max={10} onRestart={handleRestartGame} />
+        <Header current={attempts} max={10} onRestart={handleRestartGame} />
 
         <Tip tip="Linguagem de programação dinâmica" />
 
