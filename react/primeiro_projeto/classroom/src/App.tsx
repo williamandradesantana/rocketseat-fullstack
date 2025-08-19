@@ -12,6 +12,7 @@ import { Button } from "./components/Button";
 import { LettersUsed, type LettersUserProps } from "./components/LettersUsed";
 
 export default function App() {
+  const [score, setScore] = useState(0);
   const [letter, setLetter] = useState<string>("");
   const [lettersUsed, setLettersUsed] = useState<LettersUserProps[]>([]);
   const [attempts, setAttempts] = useState<number>(0);
@@ -30,6 +31,37 @@ export default function App() {
     setLetter("");
   }
 
+  function handleConfirm() {
+    if (!challenge) {
+      return;
+    }
+
+    if (!letter.trim()) {
+      return alert("Digite uma letra!");
+    }
+
+    const value = letter.toUpperCase();
+    const exists = lettersUsed.find(
+      (used) => used.value.toUpperCase() === value
+    );
+
+    if (exists) {
+      return alert("Você já utilizou a letra: " + value);
+    }
+
+    const hits = challenge.word
+      .toUpperCase()
+      .split("")
+      .filter((char) => char === value).length;
+
+    const correct = hits > 0;
+    const currentScore = score + hits;
+
+    setLettersUsed((prevState) => [...prevState, { value, correct }]);
+    setScore(currentScore);
+    setLetter("");
+  }
+
   useEffect(() => {
     startGame();
   }, []);
@@ -43,7 +75,7 @@ export default function App() {
       <main>
         <Header current={attempts} max={10} onRestart={handleRestartGame} />
 
-        <Tip tip="Linguagem de programação dinâmica" />
+        <Tip tip={challenge.tip} />
 
         <div className={styles.word}>
           {challenge.word.split("").map(() => (
@@ -56,8 +88,14 @@ export default function App() {
         <h4>Palpite</h4>
 
         <div className={styles.guess}>
-          <Input autoFocus maxLength={1} placeholder="?" />
-          <Button title="Confirmar" />
+          <Input
+            autoFocus
+            maxLength={1}
+            placeholder="?"
+            value={letter}
+            onChange={(e) => setLetter(e.target.value)}
+          />
+          <Button title="Confirmar" onClick={handleConfirm} />
         </div>
 
         <LettersUsed data={lettersUsed} />
