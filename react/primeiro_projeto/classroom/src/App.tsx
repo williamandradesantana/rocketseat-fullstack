@@ -2,7 +2,7 @@ import styles from "./app.module.css";
 
 import { useEffect, useState } from "react";
 
-import { WORDS, Challenge } from "./utils/words";
+import { WORDS, type Challenge } from "./utils/words";
 
 import { Header } from "./components/Header";
 import { Tip } from "./components/Tip";
@@ -33,6 +33,10 @@ export default function App() {
     startGame();
   }, []);
 
+  if (!challenge) {
+    return;
+  }
+
   return (
     <div className={styles.container}>
       <main>
@@ -41,11 +45,11 @@ export default function App() {
         <Tip tip="Linguagem de programação dinâmica" />
 
         <div className={styles.word}>
+          {challenge.word.split("").map(() => (
+            <Letter value="" />
+          ))}
+
           <Letter value="R" />
-          <Letter value="E" />
-          <Letter value="A" />
-          <Letter value="C" />
-          <Letter value="T" />
         </div>
 
         <h4>Palpite</h4>
