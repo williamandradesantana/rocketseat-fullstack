@@ -13,6 +13,8 @@ body {
   align-items: center;
 
   background-color: #fbf4f4;
+
+  padding: 32px;
 }
 
 h1 {
@@ -58,4 +60,23 @@ button {
   border-radius: 7px;
   border: none;
   color: #fff;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  margin: 18px 0;
+  flex-wrap: wrap;
+}
+
+.cards a {
+  width: 100px;
+  height: 100px;
+  background-color: #d7eff9;
+  color: #0095e5;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
